@@ -1,0 +1,76 @@
+/*
+    Name: Matthew Powell
+    Date: 03/22/2026
+    Assignment: Home Page Stylesheet
+
+    Description:
+    This stylesheet controls the layout and appearance of the home page.
+    It uses a CSS grid layout and includes styles for required selectors.
+*/
+
+/* Apply styles to entire HTML document */
+html {
+    font-family: Arial, sans-serif;
+}
+
+/* Grid layout for body */
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+/* Header styling */
+header {
+    grid-area: header;
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+/* Navigation styling */
+nav {
+    grid-area: nav;
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+/* Navigation links */
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    grid-area: main;
+    background-color: white;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+/* Image styling */
+img {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid black;
+}
+
+/* Footer styling */
+footer {
+    grid-area: footer;
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+}

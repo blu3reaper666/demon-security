@@ -1,0 +1,85 @@
+/*
+    Name: Matthew Powell
+    Date: 03/21/2026
+    Assignment: Demon Security Stylesheet
+
+    Description:
+    This stylesheet controls the layout and appearance of the Demon Security.
+    It uses a CSS grid layout and includes styles for required selectors.
+*/
+
+/* Apply styles to entire HTML document */
+/* Ensure html and body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/brickwall.jpg");
+    background-size: cover;         /* image covers entire viewport */
+    background-position: center;    /* center it */
+    background-repeat: no-repeat;   /* no tiling */
+    background-attachment: fixed;   /* stays fixed when scrolling */
+    color: #00ffff;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 2px #00ffff, 0 0 8px #00ffff; /* subtle neon glow */
+    display: flex;
+    flex-direction: column;         /* allow footer to stay at bottom */
+}
+
+
+/* Header styling */
+header {
+    font-family: cursive;
+    padding: 10px;
+    text-align: center;
+    color: #00ffff;
+     text-shadow:  0 0 8px #00ffff;  /* faint outer halo */
+}
+
+
+/* Navigation styling */
+nav {
+    grid-area: nav;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgb(0, 225, 255);
+}
+
+/* Navigation links */
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(0, 225, 255);
+   
+}
+
+/* Main content */
+main {
+    grid-area: main;
+    padding: 15px;
+    border: 2px solid rgb(0, 225, 255);
+    background-color: black;
+
+}
+/*tutorial*/
+h2 {
+   text-align: center; 
+}
+
+/* Image styling */
+img {
+    display: block;
+    margin: 10px 0;
+    width: 300px;
+    height: 300px;
+    object-position: left;
+    object-fit: cover;
+}
+
+/* Footer styling */
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid rgb(0, 225, 255);
+}
