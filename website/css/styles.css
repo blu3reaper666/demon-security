@@ -11,19 +11,18 @@
 /* Apply styles to entire HTML document */
 /* Ensure html and body take full height */
 html, body {
-    height: 100%;
+    min-height: 100%;
     margin: 0;
     padding: 0;
     background-image: url("../images/brickwall.jpg");
-    background-size: cover;         /* image covers entire viewport */
-    background-position: center;    /* center it */
-    background-repeat: no-repeat;   /* no tiling */
-    background-attachment: scroll;   /* stays fixed when scrolling */
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat-y;
     color: #00ffff;
     font-family: Arial, sans-serif;
-    text-shadow: 0 0 2px #00ffff, 0 0 8px #00ffff; /* subtle neon glow */
+    text-shadow: 0 0 2px #00ffff, 0 0 8px #00ffff;
     display: flex;
-    flex-direction: column;         /* allow footer to stay at bottom */
+    flex-direction: column;
 }
 
 
