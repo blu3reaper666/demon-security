@@ -163,3 +163,45 @@ li {
 .service-card li:last-child {
     border-bottom: none;
 }
+
+.service-card h2 {
+    color: #00ffff;
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+
+
+.service-card p {
+    color: white;
+    line-height: 1.6;
+}
+
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.service-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid #00ffff33;
+}
+
+
+.service-card li:last-child {
+    border-bottom: none;
+}
+
+
+.notice {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}
+
+
+.featured {
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 25px #00ffff88;
+}
