@@ -18,7 +18,7 @@ html, body {
     background-size: cover;         /* image covers entire viewport */
     background-position: center;    /* center it */
     background-repeat: no-repeat;   /* no tiling */
-    background-attachment: fixed;   /* stays fixed when scrolling */
+    background-attachment: scroll;   /* stays fixed when scrolling */
     color: #00ffff;
     font-family: Arial, sans-serif;
     text-shadow: 0 0 2px #00ffff, 0 0 8px #00ffff; /* subtle neon glow */
