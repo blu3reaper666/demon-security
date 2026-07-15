@@ -35,6 +35,21 @@ header {
     color: #00ffff;
      text-shadow:  0 0 8px #00ffff;  /* faint outer halo */
 }
+/* Header title link */
+header h1 a {
+    color: #00ffff;
+    text-decoration: none;
+    text-shadow: 0 0 8px #00ffff;
+}
+
+header h1 a:visited {
+    color: #00ffff;
+}
+
+header h1 a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 12px #00ffff;
+}
 
 
 /* Navigation styling */
