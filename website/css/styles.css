@@ -4,12 +4,15 @@
     Assignment: Demon Security Stylesheet
 
     Description:
-    This stylesheet controls the layout and appearance of the Demon Security.
-    It uses a CSS grid layout and includes styles for required selectors.
+    Controls the layout and appearance of Demon Security.
+    Uses a centered content layout with a cyberpunk/retro aesthetic.
 */
 
-/* Apply styles to entire HTML document */
-/* Ensure html and body take full height */
+
+/* =========================
+   GLOBAL DOCUMENT SETTINGS
+   ========================= */
+
 html, body {
     min-height: 100%;
     margin: 0;
@@ -22,27 +25,54 @@ html, body {
     color: #00ffff;
     font-family: Arial, sans-serif;
     text-shadow: 0 0 2px #00ffff, 0 0 8px #00ffff;
+
     display: flex;
     flex-direction: column;
 }
 
 
-/* Header styling */
+/* Main page container */
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
 header {
     font-family: cursive;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     color: #00ffff;
-     text-shadow:  0 0 8px #00ffff;  /* faint outer halo */
+    text-shadow: 0 0 8px #00ffff;
 }
-/* Header title link */
+
+
 header h1 a {
     color: #00ffff;
     text-decoration: none;
     text-shadow: 0 0 8px #00ffff;
 }
 
+
+header h1 a:visited {
+    color: #00ffff;
+}
+
+
+header h1 a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 12px #00ffff;
+}
+
+
 /* Company motto */
+
 .tagline {
     font-family: cursive;
     font-style: italic;
@@ -52,85 +82,109 @@ header h1 a {
     text-shadow: 0 0 8px #fbff04;
 }
 
-header h1 a:visited {
-    color: #00ffff;
-}
-
-header h1 a:hover {
-    color: #00ffff;
-    text-shadow: 0 0 12px #00ffff;
-}
 
 
-/* Navigation styling */
+/* =========================
+   NAVIGATION
+   ========================= */
+
 nav {
-    grid-area: nav;
-    padding: 10px;
+    padding: 18px;
     text-align: center;
     border: 2px solid rgb(0, 225, 255);
+    margin-bottom: 20px;
 }
 
-/* Navigation links */
+
 nav a {
     margin: 0 10px;
     text-decoration: none;
     color: rgb(0, 225, 255);
-   
 }
 
-/* Main content */
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
 main {
-    grid-area: main;
-    padding: 15px;
+    padding: 30px;
     border: 2px solid rgb(0, 225, 255);
     background-color: black;
-
 }
-/*tutorial*/
+
+
+/* Section spacing */
+
+section {
+    margin: 50px 0;
+}
+
+
+/* Headings */
+
 h2 {
-   text-align: center; 
+    text-align: center;
+    color: #00ffff;
 }
 
-/* Image styling */
+
+
+/* Paragraph formatting */
+
+p {
+    max-width: 850px;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+
+
+
+/* Intro text */
+
+.intro {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.7;
+    text-align: left;
+}
+
+
+
+/* =========================
+   IMAGES
+   ========================= */
+
 img {
     display: block;
-    margin: 10px 0;
-    width: 300px;
-    height: 300px;
-    object-position: left;
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
 }
 
-/* Footer styling */
-footer {
-    grid-area: footer;
-    text-align: center;
-    padding: 10px;
-    border: 2px solid rgb(0, 225, 255);
-}
 
-/* Space between sections */
-section {
-    margin-bottom: 35px;
-}
 
-/* Center introductory paragraphs */
-.intro {
-    text-align: center;
-    line-height: 1.6;
-}
+/* =========================
+   LISTS
+   ========================= */
 
-/* Lists */
 ul {
     max-width: 700px;
     margin: auto;
 }
 
+
 li {
     margin-bottom: 8px;
 }
 
-/* Buttons */
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
 .button {
     display: inline-block;
     margin: 10px;
@@ -141,67 +195,130 @@ li {
     background-color: black;
 }
 
+
 .button:hover {
     background-color: #00ffff;
     color: black;
     transition: .3s;
 }
 
-.service-card ul {
-    list-style-type: none;
-    padding: 0;
+
+
+/* =========================
+   SERVICE CARDS
+   ========================= */
+
+.service-card {
+
+    background-color: #080808;
+
+    padding: 25px;
+
+    border: 2px solid #00ffff44;
+
+    border-radius: 8px;
+
+    margin-bottom: 35px;
+
+    box-shadow: 0 0 25px #00ffff33;
 }
 
 
-.service-card li {
-    color: white;
-    padding: 8px 0;
-    border-bottom: 1px solid #00ffff33;
-}
-
-
-.service-card li:last-child {
-    border-bottom: none;
-}
 
 .service-card h2 {
+
     color: #00ffff;
+
     font-size: 1.8rem;
+
     margin: 15px 0;
+
 }
+
 
 
 .service-card p {
+
     color: white;
+
     line-height: 1.6;
+
 }
+
 
 
 .service-card ul {
+
     list-style: none;
+
     padding: 0;
+
 }
+
 
 
 .service-card li {
+
+    color: white;
+
     padding: 8px 0;
+
     border-bottom: 1px solid #00ffff33;
+
 }
+
 
 
 .service-card li:last-child {
+
     border-bottom: none;
+
 }
 
+
+
+/* =========================
+   NOTICE TEXT
+   ========================= */
 
 .notice {
+
     margin-top: 20px;
+
     font-size: 0.9rem;
+
     color: #aaaaaa;
+
 }
 
 
+
+/* =========================
+   FEATURED CONTENT
+   ========================= */
+
 .featured {
+
     border: 2px solid #00ffff;
+
     box-shadow: 0 0 25px #00ffff88;
+
+}
+
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-top: 30px;
+
+    border: 2px solid rgb(0,225,255);
+
 }
